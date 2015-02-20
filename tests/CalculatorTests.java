@@ -22,4 +22,10 @@ public class CalculatorTests {
         assertEquals(10, calculator.multiply(2,5));
     }
 
+    @Test
+    public void testDivision(){
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.divide(10,2));
+    }
+
 }
