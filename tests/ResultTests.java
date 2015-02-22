@@ -1,7 +1,5 @@
 import com.bluesquare.calculator.Result;
-import junit.framework.Assert;
 import org.junit.Test;
-
 import static junit.framework.TestCase.assertEquals;
 
 public class ResultTests {
