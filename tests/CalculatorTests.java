@@ -1,5 +1,6 @@
 import org.junit.*;
 import com.bluesquare.calculator.Calculator;
+import com.bluesquare.calculator.Result;
 import static junit.framework.Assert.assertEquals;
 
 public class CalculatorTests {
@@ -8,22 +9,26 @@ public class CalculatorTests {
 
     @Test
     public void testAdd(){
-        assertEquals(3, calculator.add(1,2));
+        Result result = calculator.add(1,2);
+        assertEquals(3, result.getAnswer());
     }
 
     @Test
     public void testSubtraction(){
-        assertEquals(3, calculator.subtract(5,2));
+        Result result = calculator.subtract(5, 2);
+        assertEquals(3, result.getAnswer());
     }
 
     @Test
     public void testMultiplication(){
-        assertEquals(10, calculator.multiply(2,5));
+        Result result = calculator.multiply(2, 5);
+        assertEquals(10, result.getAnswer());
     }
 
     @Test
     public void testDivision(){
-        assertEquals(5, calculator.divide(10,2));
+        Result result = calculator.divide(10,2);
+        assertEquals(5, result.getAnswer());
     }
 
 }

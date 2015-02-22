@@ -2,19 +2,19 @@ package com.bluesquare.calculator;
 
 public class Calculator {
 
-    public int add(int value1, int value2) {
-        return (value1 + value2);
+    public Result add(int value1, int value2) {
+        return new Result((value1 + value2), "SUCCESS");
     }
 
-    public int subtract(int value1, int value2) {
-        return (value1 - value2);
+    public Result subtract(int value1, int value2) {
+        return new Result((value1 - value2), "SUCCESS");
     }
 
-    public int multiply(int value1, int value2) {
-        return (value1 * value2);
+    public Result multiply(int value1, int value2) {
+        return new Result((value1 * value2), "SUCCESS");
     }
 
-    public int divide(int value1, int value2) {
-        return (value1 / value2);
+    public Result divide(int value1, int value2) {
+        return new Result((value1 / value2), "SUCCESS");
     }
 }
