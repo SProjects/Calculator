@@ -27,8 +27,14 @@ public class CalculatorTests {
 
     @Test
     public void testDivision(){
-        Result result = calculator.divide(10,2);
+        Result result = calculator.divide(10, 2);
         assertEquals(5, result.getAnswer());
+    }
+
+    @Test
+    public void testDivisionByZeroError(){
+        Result result = calculator.divide(6, 0);
+        assertEquals("ERROR: Division by zero", result.getErrorMessage());
     }
 
 }

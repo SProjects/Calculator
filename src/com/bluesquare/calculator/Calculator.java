@@ -15,6 +15,10 @@ public class Calculator {
     }
 
     public Result divide(int value1, int value2) {
-        return new Result((value1 / value2), "SUCCESS");
+        if(value2 == 0){
+            return new Result(-1, "ERROR: Division by zero");
+        }else{
+            return new Result((value1 / value2), "SUCCESS");
+        }
     }
 }
