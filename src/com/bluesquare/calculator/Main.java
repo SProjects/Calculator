@@ -34,10 +34,10 @@ public class Main {
             else
                 answer = calculator.divide(value1, value2);
 
-            if(answer.getAnswer() > 0 && answer.getErrorMessage().equals("SUCCESS"))
-                System.out.println(answer.getAnswer());
-            else
+            if(answer.getAnswer() == -1 && operator == 4)
                 System.out.println(answer.getErrorMessage());
+            else
+                System.out.println(answer.getAnswer());
         }
 
     }
