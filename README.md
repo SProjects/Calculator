@@ -2,5 +2,5 @@ Calculator Application
 ======================
 
 >Development Stack
->>-Java
->>-JUnit
+>>* Java
+>>* JUnit
