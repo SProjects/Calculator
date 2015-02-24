@@ -7,10 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         Result answer;
-
-        Scanner input = Main.getScannerObject();
-        System.out.println("Continue?(Y/N): ");
-        String run = input.nextLine();
+        String run = "Y";
 
         while(run.equals("Y") || run.equals("y")){
             Scanner input1 = Main.getScannerObject();
@@ -38,6 +35,10 @@ public class Main {
                 System.out.println(answer.getErrorMessage());
             else
                 System.out.println(answer.getAnswer());
+
+            Scanner input = Main.getScannerObject();
+            System.out.println("Continue?(Y/N): ");
+            run = input.nextLine();
         }
 
     }
